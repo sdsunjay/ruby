@@ -1,0 +1,9 @@
+sudo yum update
+sudo yum groupinstall "Development Tools"
+sudo yum erase ruby
+sudo yum install readline-devel git make zlib-devel sqlite-devel.x86_64 gcc g++
+curl -L https://get.rvm.io | bash -s stable --ruby
+source /home/ec2-user/.rvm/scripts/rvm
+gem install rails
+cd .ssh
+ssh-keygen -t rsa -C "SOME STUPID Comment"
